@@ -1,0 +1,7 @@
+<button (click)="setCondition()">push</button><br>
+<span *ngIf="condition">This text appears if condition is true</span>
+
+<button (click)="setGender()">gender</button>
+<span *ngIf="gender then male else female"></span>
+<ng-template #male>I am a boy</ng-template>
+<ng-template #female>I am a girl</ng-template>

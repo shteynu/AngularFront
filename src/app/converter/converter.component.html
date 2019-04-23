@@ -1,0 +1,10 @@
+<table>
+  <tr>
+    <td><input [(ngModel)]="val"/></td>
+    <td><app-select [array]="currenciesList"
+                    (choice) = "setFrom($event)"></app-select></td>
+    <td>{{getResult()}}</td>
+    <td><app-select [array]="currenciesList"
+                    (choice)="setTo($event)"></app-select></td>
+  </tr>
+</table>
