@@ -1,0 +1,58 @@
+
+
+<div class="topFooter">
+  <div class="zoominf"></div>
+</div>
+
+<div class="questionNumber" *ngIf="click < data.length">
+{{questionNumber[click]}}
+</div>
+<div class="question"  *ngIf="click < data.length">
+  {{data[click].question}}
+</div>
+
+
+<input class="firstBox" [(ngModel)]="val1" [ngClass]="{'selectFirst':selectedFirst,
+ 'rightAnswerFirst': correctAnswerFirst, 'not_rightAnswerFirst': incorrectAnswerFirst, 'hover': hoverFirst}" (click)="toggleColorFirst()"
+       (mouseenter)="firstHoverOn()" (mouseleave)="firstHoverOut()"/>
+
+
+<input class="secondBox" [(ngModel)]="val2" [ngClass]="{'selectSecond':selectedSecond,
+'rightAnswerSecond': correctAnswerSecond, 'not_rightAnswerSecond': incorrectAnswerSecond, 'hover': hoverSecond}" (click)="toggleColorSecond()"
+(mouseenter)="secondHoverOn()" (mouseleave)="secondHoverOut()"/>
+
+<input class="thirdBox" [(ngModel)]="val3" [ngClass]="{'selectThird':selectedThird,
+'rightAnswerThird': correctAnswerThird, 'not_rightAnswerThird': incorrectAnswerThird, 'hover': hoverThird}" (click)="toggleColorThird()"
+       (mouseenter)="thirdHoverOn()" (mouseleave)="thirdHoverOut()"/>
+
+<input class="fourthBox" [(ngModel)]="val4" [ngClass]="{'selectThourth':selectedThourth,
+'rightAnswerThourth': correctAnswerThourth, 'not_rightAnswerThourth': incorretAnswerThourth, 'hover': hoverThourth}" (click)="toggleColorThourth()"
+       (mouseenter)="thourthHoverOn()" (mouseleave)="thourthHoverOut()"/>
+
+<div class="button"  [ngClass]="{'selectButton':selectedButton, 'correctAnswer': correctAnswer, 'incorrectAnswer': incorrectAnswer,
+'hoverButton': buttonHover}" (click)="action()" (mouseenter)="buttonOn()" (mouseleave)="buttonOut()">
+{{word}}
+</div>
+<div class="bottonFooter"></div>
+
+<div class="smallButtonOn"></div>
+<div class="smallButton2"></div>
+<div class="smallButton2Copy" *ngIf="click >= 1"></div>
+<div class="smallButton3"></div>
+<div class="smallButton3Copy" *ngIf=" click >= 2"></div>
+<div class="smallButton4"></div>
+<div class="smallButton4Copy" *ngIf="click >= 3"></div>
+<div class="smallButton5"></div>
+<div class="smallButton5Copy" *ngIf="click >= 4"></div>
+<div class="smallButton6"></div>
+<div class="smallButton6Copy" *ngIf="click >= 5"></div>
+<div class="smallButton7"></div>
+<div class="smallButton7Copy" *ngIf="click >= 6"></div>
+<div class="smallButton8"></div>
+<div class="smallButton8Copy" *ngIf="click >= 7"></div>
+<div class="smallButton9"></div>
+<div class="smallButton9Copy" *ngIf="click >= 8"></div>
+<div class="smallButton10"></div>
+<div class="smallButton10Copy" *ngIf="click >= 9"></div>
+
+

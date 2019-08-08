@@ -1,0 +1,8 @@
+mat-checkbox {display: block}
+mat-radio-button {display: block;}
+mat-radio-group { display: block; padding: 2vh 0;}
+.container{
+  position: absolute;
+  left: 100px;
+  top: 100px;}
+button{display: block}

@@ -1,0 +1,14 @@
+<div class="container">
+  <mat-checkbox [(ngModel)]="javaCore">Java Core</mat-checkbox>
+  <mat-checkbox [(ngModel)]="javaTech">Java technologies</mat-checkbox>
+  <mat-checkbox [(ngModel)]="webCore">Web Core</mat-checkbox>
+  <mat-checkbox [(ngModel)]="angular">angular2/7</mat-checkbox>
+  <mat-radio-group [(ngModel)]="city">
+    <mat-radio-button value="Haifa">Haifa</mat-radio-button>
+    <mat-radio-button value="Rehovot">Rehovot</mat-radio-button>
+  </mat-radio-group>
+  <mat-slide-toggle [(ngModel)]="experience">
+    Experience
+  </mat-slide-toggle>
+  <button mat-raised-button color="primary" (click)="getData()">Get data</button>
+</div>

@@ -1,13 +1,20 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
 
-  /*colors = ['pink', 'navy', 'lilac', 'lightgray'];*/
+  constructor(private router: Router) {}
+
+  ngOnInit(): void {
+    this.router.navigate(['home']);
+  }
+
+ /* /!*colors = ['pink', 'navy', 'lilac', 'lightgray'];*!/
   Countries = {
     USA: ['New York', 'Chicago', 'Dallas', 'Los Angeles'],
     France: ['Paris', 'Lion', 'Cherburg', 'Marseille'],
@@ -21,5 +28,5 @@ export class AppComponent {
     this.cities = this.Countries[event];
     console.log(event);
     console.log(this.cities[0]);
-  }
+  }*/
 }

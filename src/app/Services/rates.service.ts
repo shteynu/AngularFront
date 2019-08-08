@@ -9,6 +9,8 @@ export class RatesService {
 
   url = 'https://api.exchangeratesapi.io/latest';
 
+ /* url = 'http://www.floatrates.com/daily/usd.json';*/
+
   constructor(private http: HttpClient) { }
 
   getRates() {

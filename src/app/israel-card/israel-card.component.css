@@ -1,0 +1,6 @@
+.card{max-width: 25vw;
+  position: absolute;
+  left: 10vw; top: 10vh;
+}
+.hebrew{text-align: center; font-size: 24px}
+.mat-card-footer{margin: 0;}
